@@ -2,7 +2,7 @@
 
 Converts Celsius to Fahrenheit and Fahrenheit to Celsius
 
-### Getting Started
+## Getting Started
 
 1. Install [Python3](https://www.python.org/downloads/)
 

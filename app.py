@@ -8,7 +8,7 @@ from jinja2 import Environment, PackageLoader, select_autoescape
 PORT = int(os.environ.get('PORT', '8888'))
 
 ENV = Environment(
-    loader=PackageLoader('CelsiusToF'),
+    loader=PackageLoader('tempConvert'),
     autoescape=select_autoescape(['html', 'xml'])
 )
 

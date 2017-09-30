@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+header {
+    font-size: 3rem;
+    margin: 30px;
+    line-height: normal;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 50%;
+}
+
+#result {
+    font-size: 3rem;
+    margin: 30px;
+}

@@ -32,7 +32,7 @@ class MainHandler(TemplateHandler):
         if celsius == "":
             return self.render_template("celsius.html")
         fahrenheit = (float(celsius) * 1.8) + 32
-        self.render_template("celsius.html", {'fahrenheit': round(fahrenheit, 2)})
+        self.render_template("celsius.html", {'fahrenheit': round(fahrenheit, 2), 'celsius': celsius})
 
 class FahrenheitHandler(TemplateHandler):
     def get(self):
@@ -49,7 +49,7 @@ class FahrenheitHandler(TemplateHandler):
         if fahrenheit == "":
             return self.render_template("fahrenheit.html")
         celsius = round((((int(fahrenheit) - 32) * 5) / 9))
-        self.render_template("fahrenheit.html", {'celsius': celsius})
+        self.render_template("fahrenheit.html", {'celsius': celsius, 'fahrenheit': fahrenheit})
 
 def make_app():
     return tornado.web.Application([

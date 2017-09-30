@@ -26,3 +26,11 @@ form {
     font-size: 3rem;
     margin: 30px;
 }
+
+.fahrenheit {
+    color: blue;
+}
+
+.celsius {
+    color: green;
+}

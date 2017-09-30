@@ -21,7 +21,7 @@
     {% if celsius == 0 %}
         Celsius is 0 degrees!    
     {% elif celsius %}
-        Celsius is {{ celsius }} degrees!
+        {{ fahrenheit }} <span class="fahrenheit">Fahrenheit</span> is {{ celsius }} <span class="celsius">Celsius</span>!
     {% else %}
     {% endif %}
 {% endblock%}
